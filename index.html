@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Ray</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="profile.jpg" class="profile">
+  <h1 id="typing"></h1>
+  <p>CSE Student | Web Developer</p>
+  <button class="btn" onclick="scrollToProjects()">View My Work</button>
+</section>
+
+<!-- ABOUT -->
+<section class="card hidden">
+  <h2>About Me</h2>
+  <p>
+    Computer Science student focused on web development and DSA.<br>
+    I build projects using JavaScript and practice problem-solving regularly.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="card hidden">
+  <h2>Skills</h2>
+  <ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>DSA</li>
+    <li>JavaScript</li>
+    <li>HTML & CSS</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="card hidden" id="projects">
+  <h2>Projects</h2>
+
+  <!-- TIC TAC TOE -->
+  <div class="project">
+    <h3>🎮 Tic Tac Toe Game</h3>
+    <p>
+      Interactive game with AI + 2-player mode.<br>
+      Difficulty levels, winner detection, reset system.
+    </p>
+
+    <div class="project-links">
+      <a href="https://lnkd.in/gx-QNN57" target="_blank">🔗 Live Demo</a>
+      <a href="https://lnkd.in/gc6HTpsR" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+
+  <!-- OTHER PROJECTS -->
+  <div class="project">
+    <h3>🧮 Calculator</h3>
+    <p>JavaScript calculator</p>
+  </div>
+
+  <div class="project">
+    <h3>📝 Todo App</h3>
+    <p>Task manager</p>
+  </div>
+
+</section>
+
+<!-- CERTIFICATES -->
+<section class="card hidden">
+  <h2>Certificates</h2>
+
+  <div class="certificates">
+
+    <div class="cert">
+      <img src="playstore.jpg" onclick="openModal(this.src)">
+      <p><b>Google Play Academy</b><br>App Development Fundamentals</p>
+    </div>
+
+    <div class="cert">
+      <img src="ibm-data-python.jpg" onclick="openModal(this.src)">
+      <p><b>IBM</b><br>Data Analysis with Python</p>
+    </div>
+
+    <div class="cert">
+      <img src="ibm-data-analysis.jpg" onclick="openModal(this.src)">
+      <p><b>IBM</b><br>Data Analysis Credential</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="card hidden">
+  <h2>Contact</h2>
+  <p>Email: rahulraydev03@gmail.com</p>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modalImg">
+</div>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Rahul Ray</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
